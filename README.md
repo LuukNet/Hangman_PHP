@@ -1,1 +1,2 @@
-# Hangman_PHP
+# Hangman 
+## Written In PHP
