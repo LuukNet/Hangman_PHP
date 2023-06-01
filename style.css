@@ -1,0 +1,232 @@
+/* Main Settings */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: cornflowerblue;
+}
+
+header, main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    border-radius: 10px;
+    background-color: darkslateblue;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Choice And Word Input */
+
+.info {
+    border-bottom: 3px solid black;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px; 
+}
+
+.error {
+    color: white;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+/* Input */
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice, .button, #ownWord {
+    font-weight: 600;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    margin: 6px;
+}
+
+.choice {
+    min-width: 120px;
+    height: 40px;
+    color: white;
+    background-color: darkslateblue;
+}
+
+.button {
+    margin-top: 25px;
+    min-width: 80px;
+    height: 40px;
+    color: white;
+    background-color: darkslateblue;
+}
+
+.button:hover, .choice:hover {
+    cursor: pointer;
+    background-color: lightslategray;
+}
+
+#ownWord {
+    padding: 10px;
+}
+
+/* Alphabet Input */
+
+.character, .wrong, .correct {
+    border: 2px solid;
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 20px;
+
+    height: 40px;
+    min-width: 40px;
+
+    padding: 0;
+    margin: 6px;
+}
+
+.character {
+    border-color:black;
+    background-color: darkslateblue;
+    color: white;
+}
+
+.character:hover {
+    cursor: pointer;
+    background-color: lightslategray;
+}
+
+.wrong {
+    border-color:crimson;
+    background-color: lightcoral;
+    color: grey;
+}
+
+.correct {
+    border-color:forestgreen;
+    background-color: lightgreen;
+    color: grey;
+}
+
+/* The Game */
+
+.lives {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+#theWord {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 10px;
+}
+
+#gameSection {
+    display: flex;
+    flex-direction: row;
+}
+
+#wordInfo {
+    text-align: center;
+    width: 400px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkslateblue;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+#wrongCharacters, #wordLength {
+    font-weight: 600;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    margin: 6px;
+    padding: 10px;
+}
+
+#wordLength {
+    color: rgb(84 84 84);
+    background-color: rgb(122 115 169);
+
+    width: 40px;
+    margin-left: 16px;
+}
+
+#gameInfo, #gallows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#gameInfo {
+    text-align: center;
+    width: 50vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#gallows {
+    height: 370px;
+    width: 312px;
+    border-radius: 40px;
+    color: white;
+    background-color: darkslateblue;
+}
+
+#gallowsImage {
+    height: 280px;
+    width: 300px;
+    object-fit: cover;
+    border: 6px solid black;
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    #gameSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gameInfo {
+        width: 90vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Ending */
+
+h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+#theEnd {
+    color: white;
+    background-color: darkslateblue;
+
+    border: 2px solid black;
+    border-radius: 40px;
+}
+
+#wasWord {
+    margin-top: 0;
+
+    border-bottom: 2px solid white;
+}
